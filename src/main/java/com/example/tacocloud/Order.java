@@ -10,6 +10,10 @@ import lombok.Data;
 @Data
 public class Order {
 
+    private Long id;
+
+    private Data createdAt;
+
     @NotBlank(message = "Name is required")
     private String name;
 
